@@ -1,0 +1,298 @@
+
+
+html, body
+{
+	background-color:#C6DEFF;
+}
+
+h1
+{
+	color:#151B8D;
+}
+
+h2, h3, h4
+{
+	color:#151B8D;
+}
+
+/*rotate rain*/
+
+@keyframes rainAnimate
+{
+	0% {transform:rotate(0deg);}
+	25% {transform:rotate(-15deg);}
+	75% {transform:rotate(15deg);}
+	100% {transform:rotate(0deg);}
+}
+
+
+@-moz-keyframes rainAnimate
+{
+	0% {transform:rotate(0deg);}
+	25% {transform:rotate(-15deg);}
+	75% {transform:rotate(15deg);}
+	100% {transform:rotate(0deg);}
+}
+
+
+
+@-o-keyframes rainAnimate
+{
+	0% {transform:rotate(0deg);}
+	25% {transform:rotate(-15deg);}
+	75% {transform:rotate(15deg);}
+	100% {transform:rotate(0deg);}
+}
+
+
+
+@-webkit-keyframes rainAnimate
+{
+	0% {transform:rotate(0deg);}
+	25% {transform:rotate(-15deg);}
+	75% {transform:rotate(15deg);}
+	100% {transform:rotate(0deg);}
+}
+
+.RYUheader
+{
+	text-align:center;
+	margin-top:70px;
+}
+
+.headerRainClass
+{
+	width:10%;
+	display:inline-block;
+	vertical-align:top;
+}
+
+.rainClass
+{
+	transform:skew(0deg,0deg);
+    transform:skew(170deg,170deg);
+    transform:skew(0deg,0deg);
+    animation: rainAnimate 10s;
+    animation-iteration-count:3;
+    width:24%;
+	display:inline-block;
+	margin-bottom:25px;
+
+}
+
+.rainImgHead
+{
+	width:20%;
+	display:inline-block;
+	vertical-align:top;
+}
+
+.rainImg
+{
+	width:30%;
+	margin-left:25%;
+	display:inline-block;
+}
+
+
+
+.indexPicsCar
+{
+	width:60%;
+	margin-left:4%;
+	display:inline-block;
+	vertical-align:top;
+}
+
+.chooseRoute
+{
+	margin-left:4%;
+	display:inline-block;
+	vertical-align:top;
+	width:30%;
+}
+
+#RYUlogo
+{
+	width:7%;
+	display:inline-block;
+	float:right;
+}
+
+.weatherPics
+{
+
+	height:150px !important;
+}
+
+#stop
+{
+	width:25%;
+	margin-left:7%;
+}
+
+
+/*Smaller comp*/
+
+
+@media all and (max-width:1164px)
+{
+
+	.indexPicsCar
+	{
+		width:55%;
+		margin-left:9%;
+	}
+
+	.rainClass
+	{
+	    width:25%;
+		margin-bottom:20px;
+	}
+	.rainImg
+	{
+		width:55%;
+		margin-left:30%;
+	}
+
+
+}
+
+/*Tablet*/
+
+@media all and (max-width:768px)
+{
+
+	.RYUheader
+	{
+		margin-top:50px;
+	}
+
+	h1
+	{
+		font-size:1.9em;
+	}
+
+	h2
+	{
+		font-size:1.4em;
+	}
+
+	h3
+	{
+		font-size:1.4em;
+		width:300% !important;
+	}
+
+	#basicInfoCol1
+	{
+		display:none;
+		/*visibility:none;*/
+	}
+
+
+	#arrivalsCol2
+	{
+		width:450% !important;
+		margin-left:15% !important;
+		margin-bottom:30px;
+		/*display:table-header-group !important;
+		position:absolute !important;*/
+		
+	}
+
+	#weatherCol3 
+	{
+		vertical-align:initial !important;
+		margin-left:15% !important;
+		/*margin-top:600px;*/
+		width:450% !important;
+		/*position:relative !important;*/
+		display:inline-block !important;
+		
+	}
+
+
+
+	.indexPicsCar
+	{
+		width:50%;
+		margin-left:14%;
+	}
+
+	.rainClass
+	{
+	    width:25%;
+		margin-bottom:15px;
+	}
+
+	.rainImg
+	{
+		width:55%;
+		margin-left:25%;
+	}
+
+
+
+}
+
+
+
+/*Phone*/
+@media all and (max-width:480px)
+{
+
+	.RYUheader
+	{
+		margin-top:20px;
+	}
+
+	h1
+	{
+		font-size:1.7em;
+	}
+
+	h2
+	{
+		font-size:1.3em;
+	}
+
+	h3
+	{
+		font-size:1.1em;
+	}
+
+
+	.chooseRoute
+	{
+		width:100%;
+	}
+
+	.indexPicsCar
+	{
+		width:30%;
+		margin-left:24%;
+	}
+
+	/*.rainClass
+	{
+	    width:60%;
+		margin-bottom:10px;
+	}*/
+
+	.rainImg
+	{
+		width:60%;
+		margin-left:40%;
+	}
+
+	.rainClass
+	{
+		display:none;
+		visibility:none;
+	}
+
+
+
+}
+
